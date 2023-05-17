@@ -1,0 +1,69 @@
+<section class="header">
+ <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-11 top-border">
+            <h1>Website Tagline</h1>
+        </div>
+
+    </div>
+ </div>
+ 
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/originals/08/00/0f/08000fab1e184474f65374539a4bdee7.jpg" height="80px" width="130px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+                   
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Shop  </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="container">
+                          <div class="row">
+                            <div class="col-lg-3" *ngFor="let item of megamenu">
+                         <h2>{{item.heading}}</h2>
+                         <p *ngFor="let item of item.tags">{{item.tag}} </p> 
+                            </div>
+                        </div>
+                          </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Categories </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Collections </a></li>
+                   
+                    <li class="nav-item"><a class="nav-link" href="#"> New Arrivals </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Login/Signup </a></li>
+                  
+                  
+                    <li class="nav-item">
+ <a class="nav-link">
+    <i class="fa-sharp fa-regular fa-heart"></i><sup class="badge bg-secondary circle">0</sup>
+ </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                          <span><i class="fa-solid fa-cart-shopping"></i><sup class="badge bg-secondary circle">0</sup></span> 
+                        </a>
+                                           </li>
+                                           <li class="nav-item">
+                                            <a class="nav-link">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                                               </li>
+                </ul>
+              
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+        </nav>
+</section>

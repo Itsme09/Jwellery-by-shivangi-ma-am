@@ -1,0 +1,67 @@
+.header{
+    background: #0c0c0c;
+    position: fixed;
+    width: 100%;
+    z-index: 11111;
+   
+    font-family: 'Raleway', sans-serif;
+    height: 150px;
+    margin-top: 0em;
+    padding-top: 0em;
+    border: .5px solid #0c0c0c;
+    .top-border{
+        border-bottom: 1px solid grey;
+        h1{
+            text-align: center;
+            color: #ffff;
+            font-size: 20px;
+            margin: .6em;
+            font-weight: 600;
+        }
+    }
+    .navbar {
+        .navbar-nav{
+            margin-left: auto;
+            .nav-item{
+                margin-right: 1em;
+                .nav-link{
+                    font-weight: 500;
+                    color: #ffff;
+                    font-size: 18px;
+                    .badge{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0; top: 6.3em; border-radius: 0em; 
+   h2{
+    font-size: 22px;
+   }
+   p{
+    font-size: 18px;
+   }
+}
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
